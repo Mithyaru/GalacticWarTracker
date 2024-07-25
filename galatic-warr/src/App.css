@@ -1,0 +1,25 @@
+.App {
+  height: 100vh;
+  text-align: center;
+
+}
+
+.page {
+  display: flex;
+  gap: 50px;
+  padding: 20px;
+}
+
+.orders {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
+  padding: 50px 20px;
+  border: 1px solid #fff;
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid #000;
+}
