@@ -51,6 +51,4 @@ app.get('/planets', async (req, res) => {
 })
 
 
-app.listen(4000, function () {
-  console.log("Iniciou na porta 4000");
-});
+app.listen(port, () => console.log('server is running on ' + port))
