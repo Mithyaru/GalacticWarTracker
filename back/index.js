@@ -1,6 +1,7 @@
 const axios = require("axios");
 const express = require("express");
 const cors = require("cors");
+const port = process.env.PORT || 4000
 
 const app = express();
 app.use(cors());
@@ -24,6 +25,11 @@ const reqCampaings = {
   method: "GET",
   headers: headersList,
 };
+
+app.get('/', (req, res) => {
+res.send('Server side funcionando')
+}
+)
 
 app.get('/campanhas', async (req, res) => {
   let campaigns = [];
