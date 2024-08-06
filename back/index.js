@@ -1,9 +1,9 @@
-const axios = require("axios");
-const express = require("express");
-const cors = require("cors");
+let axios = require("axios");
+let express = require("express");
+let cors = require("cors");
 const port = process.env.PORT || 4000
 
-const app = express();
+let app = express();
 app.use(cors());
 
 const planetEndPoint = "/planets";
